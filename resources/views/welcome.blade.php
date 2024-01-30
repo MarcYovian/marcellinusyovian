@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MarcYovian Portfolio</title>
-    @vite("resources/css/app.css")
+    @vite('resources/css/app.css')
     {{-- @vite('resources/js/app.js') --}}
 
 </head>
@@ -29,7 +29,7 @@
                 </div>
                 <div class="w-full self-end px-4 md:w-1/2">
                     <div class="relative mt-10 lg:right-0 lg:mt-0">
-                        <img src="{{ asset("img/profile.png") }}" alt="Marcellinus Yovian"
+                        <img src="{{ asset('img/profile.png') }}" alt="Marcellinus Yovian"
                             class="relative z-10 mx-auto max-w-full" height="500">
                         <span
                             class="absolute bottom-0 left-1/2 -translate-x-1/2 scale-90 max-[478px]:-bottom-10 max-[478px]:scale-50 sm:bottom-10 sm:scale-100 md:top-1 md:scale-75 lg:top-20 lg:scale-90">
@@ -51,7 +51,7 @@
         <div class="container">
             <div class="flex flex-wrap">
                 <div class="relative w-full self-start px-4 pb-5 lg:w-1/2">
-                    <img src="{{ asset("img/profile2.png") }}" alt="Marcellinus Yovian"
+                    <img src="{{ asset('img/profile2.png') }}" alt="Marcellinus Yovian"
                         class="relative z-10 mx-auto max-w-full max-[300px]:w-48">
                     <span
                         class="absolute left-1/2 top-5 -translate-x-1/2 max-[400px]:scale-75 max-[300px]:bottom-10 max-[300px]:scale-50">
@@ -212,6 +212,46 @@
         </div>
     </section>
     {{-- Skill Section End --}}
+
+    {{-- Service Section Start --}}
+    <section id="service" class="bg-dark-full pb-16 pt-36">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="mx-auto mb-16 max-w-xl text-center">
+                    <h3 class="text-base font-semibold text-white xl:text-2xl">What Am I Providing</h3>
+                    <h1 class="text-4xl font-bold text-primary xl:text-6xl">SERVICES</h1>
+                </div>
+            </div>
+
+            <div class="flex w-full flex-wrap justify-center px-4 min-[630px]:space-x-2 sm:space-x-4 md:space-x-16">
+                <div
+                    class="mb-12 w-auto rounded-2xl bg-dark-semi px-10 py-24 transition duration-500 hover:bg-primary sm:w-72 md:max-w-72">
+                    <div class="flex justify-center text-white">
+                        <svg role="img" class="w-28 fill-current" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <title>htmx</title>
+                            <path
+                                d="M0 13.01v-2l7.09-2.98.58 1.94-5.1 2.05 5.16 2.05-.63 1.9Zm16.37 1.03 5.18-2-5.16-2.09.65-1.88L24 10.95v2.12L17 16zm-2.85-9.98H16l-5.47 15.88H8.05Z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-wrap text-center text-2xl font-semibold text-white">Web Development</h3>
+                </div>
+                <div
+                    class="mb-12 w-auto rounded-2xl bg-dark-semi px-10 py-24 transition duration-500 hover:bg-primary sm:w-72 md:max-w-72">
+                    <div class="flex justify-center text-white">
+                        <svg role="img" class="w-28 fill-current" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <title>htmx</title>
+                            <path
+                                d="M0 13.01v-2l7.09-2.98.58 1.94-5.1 2.05 5.16 2.05-.63 1.9Zm16.37 1.03 5.18-2-5.16-2.09.65-1.88L24 10.95v2.12L17 16zm-2.85-9.98H16l-5.47 15.88H8.05Z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-wrap text-center text-2xl font-semibold text-white">Web Development</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{-- Service Section End --}}
 
     <script src="https://kit.fontawesome.com/aa3910db9c.js" crossorigin="anonymous"></script>
 </body>

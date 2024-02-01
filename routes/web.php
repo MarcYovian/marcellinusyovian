@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\LexaInstitute\AboutController;
+use App\Http\Controllers\LexaInstitute\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +18,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+// Lexa Institute Routes
+Route::get('/lexainstitute', [HomeController::class, 'index']);
+Route::get('/lexainstitute/about', [AboutController::class, 'index']);

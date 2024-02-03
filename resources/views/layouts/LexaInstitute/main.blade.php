@@ -11,7 +11,7 @@
 
 <body>
     {{-- Navbar Start --}}
-    @include('layouts.LexaInstitute.partials.navbar')
+    @include('partials.lexainstitute.navbar')
     {{-- Navbar End --}}
 
     {{-- Content Start --}}
@@ -19,7 +19,7 @@
     {{-- Content End --}}
 
     {{-- Footer Start --}}
-    @include('layouts.LexaInstitute.partials.footer')
+    @include('partials.lexainstitute.footer')
     {{-- Footer End --}}
 
     {{-- Scrool Button Start --}}

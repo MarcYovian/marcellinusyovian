@@ -1,17 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.main')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>MarcYovian Portfolio</title>
-    @vite('resources/css/app.css')
-    {{-- @vite('resources/js/app.js') --}}
-
-</head>
-
-<body class="">
+@section('container')
     {{-- Hero Section Start --}}
     <section id="home" class="bg-dark-full pt-36">
         <div class="container">
@@ -23,7 +12,7 @@
                             class="text-bold text-primary">web & mobile developer</span> passionate about creating
                         innovative solutions for seamless digital experiences."</p>
 
-                    <a href="#"
+                    <a href="#contact"
                         class="float-end rounded-full bg-primary px-8 py-2 text-base font-semibold text-light transition duration-300 ease-in-out hover:opacity-80 hover:shadow-md md:float-none">Contact
                         Me</a>
                 </div>
@@ -235,7 +224,7 @@
     {{-- Skill Section End --}}
 
     {{-- Service Section Start --}}
-    <section id="service" class="bg-dark-semi pb-16 pt-36">
+    <section id="services" class="bg-dark-semi pb-16 pt-36">
         <div class="container">
             <div class="w-full px-4">
                 <div class="mx-auto mb-16 max-w-xl text-center">
@@ -342,8 +331,12 @@
                                 </div>
                             </div>
                             <a href="/lexainstitute"
-                                class="inline-flex items-center px-4 py-1 text-sm font-medium text-center text-white bg-primary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-primary dark:focus:ring-blue-800">
+                                class="inline-flex items-center px-4 py-1 text-sm font-medium text-center text-white bg-third rounded-lg hover:bg-primary focus:ring-4 focus:outline-none focus:ring-blue-800">
                                 See Website
+                            </a>
+                            <a href="https://github.com/MarcYovian/LexaInstitute"
+                                class="inline-flex items-center px-4 py-1 text-sm font-medium text-center text-white bg-blue-600 rounded-lg hover:bg-primary focus:ring-4 focus:outline-none focus:ring-blue-800">
+                                See Github
                                 <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -381,15 +374,15 @@
                                     </svg>
                                 </div>
                             </div>
-                            {{-- <a href="/lexainstitute"
-                                class="inline-flex items-center px-4 py-1 text-sm font-medium text-center text-white bg-primary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-primary dark:focus:ring-blue-800">
+                            <a href="https://github.com/MarcYovian/LexaInstitute"
+                                class="inline-flex items-center px-4 py-1 text-sm font-medium text-center text-white bg-blue-600 rounded-lg hover:bg-primary focus:ring-4 focus:outline-none focus:ring-blue-800 ">
                                 See Website
                                 <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                         stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
                                 </svg>
-                            </a> --}}
+                            </a>
                         </div>
                     </div>
                     <div class="max-w-sm bg-dark-semi rounded-2xl border border-gray-900">
@@ -420,15 +413,15 @@
                                     </svg>
                                 </div>
                             </div>
-                            {{-- <a href="/lexainstitute"
-                                class="inline-flex items-center px-4 py-1 text-sm font-medium text-center text-white bg-primary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-primary dark:focus:ring-blue-800">
-                                See Website
+                            <a href="https://github.com/MarcYovian/BoxOfFish-Project"
+                                class="inline-flex items-center px-4 py-1 text-sm font-medium text-center text-white bg-blue-600 rounded-lg hover:bg-primary focus:ring-4 focus:outline-none focus:ring-blue-800 ">
+                                See Github
                                 <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                         stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
                                 </svg>
-                            </a> --}}
+                            </a>
                         </div>
                     </div>
                     <div class="max-w-sm bg-dark-semi rounded-2xl border border-gray-900">
@@ -468,15 +461,15 @@
                                     </svg>
                                 </div>
                             </div>
-                            {{-- <a href="/lexainstitute"
+                            <a href="https://github.com/MarcYovian/TelU_PIS"
                                 class="inline-flex items-center px-4 py-1 text-sm font-medium text-center text-white bg-primary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-primary dark:focus:ring-blue-800">
-                                See Website
+                                See Github
                                 <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                         stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
                                 </svg>
-                            </a> --}}
+                            </a>
                         </div>
                     </div>
 
@@ -487,7 +480,7 @@
     {{-- Portfolio Section End --}}
 
     {{-- Contact Section Start --}}
-    <section id="portfolio" class="bg-dark-semi pt-36 pb-16">
+    <section id="contact" class="bg-dark-semi pt-36 pb-16">
         <div class="container">
             <div class="w-full px-4">
                 <div class="mx-auto mb-16 max-w-xl text-center">
@@ -515,8 +508,8 @@
                             class="ms-auto -mx-1.5 -my-1.5 bg-blue-300 text-primary rounded-lg focus:ring-2 focus:ring-blue-400 p-1.5 hover:bg-blue-200 inline-flex items-center justify-center h-8 w-8 btn-close"
                             data-dismiss-target="#alert-1" aria-label="Close">
                             <span class="sr-only">Close</span>
-                            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                fill="none" viewBox="0 0 14 14">
+                            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 14 14">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                     stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
                             </svg>
@@ -554,9 +547,8 @@
 
                         <button disabled type="button"
                             class="text-white text-base bg-primary hover:opacity-70  w-full font-semibold rounded-full px-8 py-3 text-center items-center justify-center transition duration-500 btn-loading hidden">
-                            <svg aria-hidden="true" role="status"
-                                class="inline w-4 h-4 me-3 text-white animate-spin" viewBox="0 0 100 101"
-                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg aria-hidden="true" role="status" class="inline w-4 h-4 me-3 text-white animate-spin"
+                                viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
                                     fill="#E5E7EB" />
@@ -572,140 +564,10 @@
         </div>
     </section>
     {{-- Contact Section End --}}
-
-    {{-- Contact Section Start --}}
-    <footer class="bg-dark-full pt-24 pb-12">
-        <div class="container">
-            <div class="flex flex-wrap">
-                <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/4">
-                    <h2 class="font-bold text-4xl text-white mb-5"><span class="text-primary">MarcYovian</span></h2>
-                    <h3 class="font-bold text-2xl mb-2">Hubungi Kami</h3>
-                    <p>marcellinusyovian@gmail.com</p>
-                    <p>Taman Suko Asri</p>
-                    <p>Sukodono, Sidoarjo</p>
-                </div>
-                <div class="w-full px-4 mb-12 md:w-1/4">
-                    <h3 class="font-semibold text-xl text-white mb-5">SERVICES</h3>
-                    <ul class="text-slate-300">
-                        <li>
-                            <a href="#"
-                                class="inline-block text-base hover:text-primary mb-3 transition duration-300">Web
-                                Development</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="inline-block text-base hover:text-primary mb-3 transition duration-300">Mobile
-                                Development</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="w-full px-4 mb-12 md:w-1/4">
-                    <h3 class="font-semibold text-xl text-white mb-5">USEFUL LINKS</h3>
-                    <ul class="text-slate-300">
-                        <li>
-                            <a href="#"
-                                class="inline-block text-base hover:text-primary mb-3 transition duration-300">Services</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="inline-block text-base hover:text-primary mb-3 transition duration-300">Skills</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="inline-block text-base hover:text-primary mb-3 transition duration-300">Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="inline-block text-base hover:text-primary mb-3 transition duration-300">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="w-full px-4 mb-12 md:w-1/4">
-                    <h3 class="font-semibold text-xl text-white mb-5">FOLLOW ME</h3>
-                    <ul class="text-slate-300">
-                        <li>
-                            <a href="#" class="flex text-base hover:text-primary mb-3 transition duration-300">
-                                <svg role="img" class="w-5 me-2 fill-current" viewBox="0 0 24 24"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <title>LinkedIn</title>
-                                    <path
-                                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                                </svg>
-                                <span>LinkedIn </span></a>
-                        </li>
-                        <li>
-                            <a href="#" class="flex text-base hover:text-primary mb-3 transition duration-300">
-                                <svg role="img" class="w-5 me-2 fill-current" viewBox="0 0 24 24"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <title>Instagram</title>
-                                    <path
-                                        d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077" />
-                                </svg>
-                                <span>Instagram</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="w-full pt-10 border-t border-dark-semi">
+@endsection
 
 
-                <div class="w-full text-center text-white opacity-50">
-                    created by
-                    <a href="http://instagram.com/marcyovian" target="_blank" class="font-bold text-primary ">
-                        Marcellinus Yovian
-                    </a>, using
-                    <a href="https://laravel.com" target="_blank" class="font-bold text-red-600">
-                        Laravel
-                    </a>
-                    and
-                    <a href="https://tailwindcss.com" target="_blank" class="font-bold text-sky-500">
-                        Tailwind CSS
-                    </a>.
-                </div>
-            </div>
-        </div>
-    </footer>
-    {{-- Contact Section End --}}
-
+@section('js')
     <script src="https://kit.fontawesome.com/aa3910db9c.js" crossorigin="anonymous"></script>
-    <script>
-        const scriptURL =
-            'https://script.google.com/macros/s/AKfycbz8xsqgLCZYTWvlCVTKj2AF3ASiPWklbXRcXcYMCasYd03ol9IArPYyDkZA4-iPYhg3/exec'
-        const form = document.forms['my-contact-form'];
-        const btnSend = document.querySelector('.btn-send');
-        const btnLoading = document.querySelector('.btn-loading');
-        const successAlert = document.querySelector('.success-alert');
-        const btnCloseAlert = document.querySelector('.btn-close');
-
-        form.addEventListener('submit', e => {
-            e.preventDefault();
-            // button submit on click
-
-            // show btn loading, not showing btn send
-            btnLoading.classList.toggle('hidden');
-            btnSend.classList.toggle('hidden');
-            fetch(scriptURL, {
-                    method: 'POST',
-                    body: new FormData(form)
-                })
-                .then(response => {
-                    // show btn send, not showing btn loading
-                    btnLoading.classList.toggle('hidden');
-                    btnSend.classList.toggle('hidden');
-                    successAlert.classList.toggle('hidden');
-
-                    // reset form
-                    form.reset();
-                    console.log('Success!', response)
-                })
-                .catch(error => console.error('Error!', error.message))
-        })
-
-        btnCloseAlert.addEventListener('click', function() {
-            successAlert.classList.toggle('hidden');
-        })
-    </script>
-</body>
-
-</html>
+    <script src="{{ asset('js/app.js') }}"></script>
+@endsection
